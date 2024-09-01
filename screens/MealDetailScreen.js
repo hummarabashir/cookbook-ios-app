@@ -20,11 +20,12 @@ function MealDetailScreen({ route, navigation }) {
     navigation.setOptions({
       headerRight: () => {
         return (
-          <IconButton
-            icon="star"
-            color="white"
-            onPress={headerButtonPressHandler}
-          />
+          <Text style={styles.icon}>♡</Text>
+          // <IconButton
+          //   icon="star"
+          //   color="white"
+          //   onPress={headerButtonPressHandler}
+          // />
         );
       },
     });
@@ -78,4 +79,11 @@ const styles = StyleSheet.create({
   listContainer: {
     width: '80%',
   },
+  icon: {
+    fontSize: 20,
+    color: 'white',
+  },
+  list: {
+    color: '#916c80'
+  }
 });

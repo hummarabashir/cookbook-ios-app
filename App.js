@@ -6,7 +6,7 @@
  */
 import 'react-native-gesture-handler';
 import React from 'react';
-import { StatusBar, StyleSheet, Button } from 'react-native';
+import { StatusBar, StyleSheet, Button, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
@@ -24,13 +24,13 @@ function DrawerNavigator() {
   return (
     <Drawer.Navigator
       screenOptions={{
-        headerStyle: { backgroundColor: '#351401' },
+        headerStyle: { backgroundColor: '#5d4e6d' },
         headerTintColor: 'white',
-        sceneContainerStyle: { backgroundColor: '#3f2f25' },
-        drawerContentStyle: { backgroundColor: '#351401' },
+        sceneContainerStyle: { backgroundColor: '#bc8da0' },
+        drawerContentStyle: { backgroundColor: '#827191' },
         drawerInactiveTintColor: 'white',
-        drawerActiveTintColor: '#351401',
-        drawerActiveBackgroundColor: '#e4baa1',
+        drawerActiveTintColor: '#48233c',
+        drawerActiveBackgroundColor: '#73648a',
       }}
     >
       <Drawer.Screen
@@ -39,7 +39,8 @@ function DrawerNavigator() {
         options={{
           title: 'All Categories',
           drawerIcon: ({ color, size }) => (
-            <Icon name="list" color={color} size={size} />
+            // <Icon name="list" color={color} size={size} />
+            <Text style={styles.icon}>☰</Text>
           ),
         }}
       />
@@ -48,8 +49,10 @@ function DrawerNavigator() {
         component={FavoritesScreen}
         options={{
           drawerIcon: ({ color, size }) => (
-            <Icon name="star" color={color} size={size} />
+            // <Icon name="star" color={color} size={size} />
+            <Text style={styles.icon}>♡</Text>
           ),
+          
         }}
       />
     </Drawer.Navigator>
@@ -63,9 +66,9 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator
           screenOptions={{
-            headerStyle: { backgroundColor: '#351401' },
+            headerStyle: { backgroundColor: '#5d4e6d' },
             headerTintColor: 'white',
-            contentStyle: { backgroundColor: '#3f2f25' },
+            contentStyle: { backgroundColor: '#bc8da0' },
           }}
         >
           <Stack.Screen
@@ -91,4 +94,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {},
+  icon: {
+    fontSize: 22,
+    color: '#48233c'
+  }
 });

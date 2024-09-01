@@ -23,9 +23,10 @@ export default CategoryGridTile;
 
 const styles = StyleSheet.create({
   gridItem: {
-    flex: 1,
-    margin: 16,
-    height: 150,
+    // flex: 1,
+    width: 150,
+    marginTop: 16,
+    height: 80,
     borderRadius: 8,
     elevation: 4,
     backgroundColor: 'white',
@@ -43,13 +44,14 @@ const styles = StyleSheet.create({
   },
   innerContainer: {
     flex: 1,
-    padding: 16,
+    padding: 12,
     borderRadius: 8,
     justifyContent: 'center',
     alignItems: 'center',
   },
   title: {
     fontWeight: 'bold',
-    fontSize: 18,
+    fontSize: 16,
+    textTransform: "uppercase"
   },
 });

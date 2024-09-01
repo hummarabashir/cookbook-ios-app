@@ -2,16 +2,16 @@ import Category from '../models/category';
 import Meal from '../models/meal';
 
 export const CATEGORIES = [
-  new Category('c1', 'Italian', '#f5428d'),
-  new Category('c2', 'Quick & Easy', '#f54242'),
-  new Category('c3', 'Hamburgers', '#f5a442'),
-  new Category('c4', 'German', '#f5d142'),
-  new Category('c5', 'Light & Lovely', '#368dff'),
-  new Category('c6', 'Exotic', '#41d95d'),
-  new Category('c7', 'Breakfast', '#9eecff'),
-  new Category('c8', 'Asian', '#b9ffb0'),
-  new Category('c9', 'French', '#ffc7ff'),
-  new Category('c10', 'Summer', '#47fced')
+  new Category('c1', 'Italian', '#a04668'),
+  new Category('c2', 'Quick & Easy', '#b33951'),
+  new Category('c3', 'Hamburgers', '#fb8f67'),
+  new Category('c4', 'German', '#fac05e'),
+  new Category('c5', 'Light & Lovely', '#588157'),
+  new Category('c6', 'Exotic', '#3a7ca5'),
+  new Category('c7', 'Breakfast', '#3fa7d6'),
+  new Category('c8', 'Asian', '#7fc29b'),
+  new Category('c9', 'French', '#7a9e9f'),
+  new Category('c10', 'Summer', '#2ec4b6')
 ];
 
 export const MEALS = [
@@ -231,7 +231,7 @@ export const MEALS = [
   new Meal(
     'm8',
     ['c8'],
-    'Creamy Indian Chicken Curry',
+    'Creamy Pakistani Chicken Curry',
     'pricey',
     'challenging',
     'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',

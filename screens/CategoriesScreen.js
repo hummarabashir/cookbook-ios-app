@@ -1,4 +1,4 @@
-import { FlatList } from 'react-native';
+import { FlatList, StyleSheet, View } from 'react-native';
 import CategoryGridTile from '../components/CategoryGridTile';
 
 import { CATEGORIES } from '../data/dummy-data';
@@ -12,11 +12,13 @@ function CategoriesScreen({ navigation }) {
     }
 
     return (
+      <View style={styles.list}>
       <CategoryGridTile
         title={itemData.item.title}
         color={itemData.item.color}
         onPress={pressHandler}
       />
+      </View>
     );
   }
 
@@ -31,3 +33,13 @@ function CategoriesScreen({ navigation }) {
 }
 
 export default CategoriesScreen;
+
+const styles = StyleSheet.create({
+  list: {
+    // width: 180,
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 10
+  } 
+});
